@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap"
+      rel="stylesheet"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -14,272 +16,475 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <title>lam thanh cong</title>
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/laptop.css" />
+
+    <title>Assignment 03</title>
   </head>
   <body>
-    <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar scroll</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul
-            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-            style="--bs-scroll-height: 100px"
-          >
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <div
+      id="banner"
+      style="
+        padding: 50px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+      "
+    >
+      <img
+        src="images/banner.jpg"
+        alt="avarta"
+        style="
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+          object-position: 100% 0;
+          filter: brightness(50%);
+        "
+        id="image-avatar"
+      />
+
+      <div class="tiltle vana1">
+        <h1>LÂM THÀNH CÔNG</h1>
+        <span>Full Stack Developer</span>
+      </div>
+    </div>
+
+    <section id="nav-bar">
+      <nav class="container" style="padding: 0px">
+        <ul>
+          <li>
+            <a href="#">Thông tin</a>
+            <div><i class="icon icon-user"></i></div>
+          </li>
+          <li>
+            <a href="#">Lý lịch</a>
+            <div><i class="icon icon-doc-text-inv"></i></div>
+          </li>
+          <li>
+            <a class="vana2">
+              <!-- <h1>LÂM THÀNH CÔNG</h1>
+              <span>Full Stack Developer</span> -->
+              <img src="images/default-avatar.webp" />
+            </a>
+          </li>
+          <li>
+            <a href="#">Chứng chỉ</a>
+            <div><i class="icon icon-mail-alt"></i></div>
+          </li>
+          <li>
+            <a href="#">Dự Án</a>
+            <div><i class="icon icon-star-1"></i></div>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="about" class="bg-grey">
+      <div class="container container1">
+        <div id="target">
+          <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+          <p>
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+            <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được
+            trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+            hoàn thành tốt nhất công việc được giao.
+          </p>
+        </div>
+        <div id="personal-info">
+          <h1 class="section-title">Thông tin cá nhân</h1>
+          <ul class="mt-40 info">
+            <li><b>Giới tính</b> : Nam</li>
+            <li><b>Ngày sinh</b> : 01/07/2000</li>
+            <li><b>Điện thoại</b> : (+84) 912398xxx</li>
+            <li><b>Email</b> : sinhvien@funix.edu.vn</li>
+            <li><b>Địa chỉ</b> : Số 10, đường 10, Nam Định</li>
+            <li><b>Website</b> : https://abc.tech</li>
+          </ul>
+          <div class="icon-personal">
+            <i class="icon icon-twitter"></i>
+            <i class="icon icon-facebook"></i>
+            <i class="icon icon-gplus"></i>
+            <i class="icon icon-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="job-info">
+      <div class="container container2">
+        <div style="margin-top: 20px">
+          <h1>Kinh nghiệm</h1>
+          <div><i class="ic-toolbox"></i></div>
+          <div>
+            <ul>
+              <li>
+                <p>
+                  <b>Full Stack Developer - Công ty Y</b>
+                  <i style="font-size: 12px; color: rgba(0, 0, 0, 1)"
+                    >05/2022</i
+                  >
+                  -<span
+                    ><i style="font-size: 12px; color: #fff">Hiện Tại</i></span
+                  >
+                  <br />- Xãy dung, phát trién Website dua trên thiet kё vá yêu
+                  cau da CÓ. <br />- Phân tich và thiët kē Database, sù dung các
+                  hê quan tri CSDL (MySQL, SQLServer, NoSQL, ...) và viet durce
+                  các cãu truy van. <br />- Sù dung ngón ngü server-side
+                  (Python, Java, ...) de xay during các Web Service
+                </p>
+              </li>
+              <li>
+                <p>
+                  Web Designer - Cóng ty X 06/2021-04/2022 - Thiet kē Website du
+                  trên yêu cau cua khách hang. - Sù dung các cong cu: Figma,
+                  Canva, PTS.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top: 20px">
+          <h1>Kỹ Năng</h1>
+          <div><i class="ic-tools-2"></i></div>
+          <ul>
+            <li>
+              <p>HTMLCSS: Fundamental</p>
+              <span
+                class="scoreline"
+                style="background: #199cdb; height: 2px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #d8d8d8; height: 2px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #d8d8d8; height: 2px"
+              ></span>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li>
+              <p>Javascript Intermediate</p>
+              <span
+                class="scoreline"
+                style="background: #199cdb; height: 2px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #199cdb; height: 2px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #d8d8d8; height: 2px"
+              ></span>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarScrollingDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Link
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarScrollingDropdown"
-              >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+            <li>
+              <p>NodeJs: intermediate</p>
+              <span
+                class="scoreline"
+                style="background: #199cdb; height: 3px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #199cdb; height: 3px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #d8d8d8; height: 3px"
+              ></span>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Link</a>
+            <li>
+              <p>Bootstrap 5: Fundamental</p>
+              <span
+                class="scoreline"
+                style="background: #199cdb; height: 3px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #d8d8d8; height: 3px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #d8d8d8; height: 3px"
+              ></span>
             </li>
           </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
-      </div>
-    </nav>
-    <!-- asd -->
-    <div class="row g-4 m-2">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div style="margin-top: 20px">
+          <h1>Ngôn Ngữ</h1>
+          <div><i class="ic-mic"></i></div>
+          <ul>
+            <li>
+              <p>Tiếng Anh - IELTS 7.0</p>
+              <span
+                class="scoreline"
+                style="background: #199cdb; height: 2px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #199cdb; height: 2px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #d8d8d8; height: 2px"
+              ></span>
+            </li>
+            <li>
+              <p>Tiếng Nhật - JLPT N4</p>
+              <span
+                class="scoreline"
+                style="background: #199cdb; height: 2px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #d8d8d8; height: 2px"
+              ></span>
+              <span
+                class="scoreline"
+                style="background: #d8d8d8; height: 2px"
+              ></span>
+            </li>
+          </ul>
+        </div>
+        <div style="margin-top: 20px">
+          <h1>Hoạt Động</h1>
+          <div><i class="ic-toolbox"></i></div>
+          <div>
+            <ul>
+              <li>
+                <p>
+                  <b>FPT Edu Hackathon 2019</b>
+                  <br />
+                  <i style="font-size: 12px; color: rgba(0, 0, 0, 1)"
+                    >03/2019 - 05/2019</i
+                  ><br />
+                  - Giải 3 bằng A <br />
+                  - Đề tài : Trang web về phân loại rác thải
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Câu lạc bộ Z</b><br />
+                  <i style="font-size: 12px; color: rgba(0, 0, 0, 1)"
+                    >08/2016 - 08/2017</i
+                  ><br />
+                  -Trưởng ban chuyên môn
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top: 20px">
+          <h1>Học Vấn</h1>
+          <div><i class="ic-pencil"></i></div>
+          <div>
+            <ul>
+              <li>
+                <p>
+                  <b>FUNiX</b><br />
+                  <i style="font-size: 12px; color: rgba(0, 0, 0, 1)"
+                    >06/2021 - 05/2022</i
+                  >
+                  <br />- Tot nghiep chung chi doanh nghiép nhanh Fullstack.
+                  <br />
+                  -GPA: 9/10
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Cử Nhân - đại học FPT</b><br />
+                  <i style="font-size: 12px; color: rgba(0, 0, 0, 1)"
+                    >06/2021 - 05/2022</i
+                  ><br />-Chuyên Nghành: kỹ thuật Phần mềm <br />-GPA:9.0/4
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top: 20px">
+          <h1>Sở Thích</h1>
+          <div>
+            <i class="ic-telescope"></i>
+          </div>
+          <div id="sothich-icon">
+            <div>
+              <div><i class="ic-megaphone"></i></div>
+              <p>Âm Nhạc</p>
+            </div>
+
+            <div>
+              <div><i class="ic-strategy"></i></div>
+
+              <p>Chơi Game</p>
+            </div>
+
+            <div>
+              <div><i class="ic-hotairballoon"></i></div>
+              <p>Du Lịch</p>
+            </div>
+
+            <div>
+              <div><i class="ic-basket"></i></div>
+              <p>Nấu ăn</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    </section>
+    <section id="certificate" class="bg-grey">
+      <div class="container">
+        <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+        <div class="chungchi tren">
+          <div>
+            <img src="images/Cert_DBI.png" alt="" />
+            <div>
+              <b>CHỨNG CHỈ LẬP TRÌNH WEB-FUNIX</b>
+              <p>
+                -Chứng chỉ thuộc chương chình CCDN <br />
+                -GPA:9.9
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="images/Cert_DBI.png" alt="" />
+            <div>
+              <b>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT-FUNIX</b>
+              <p>
+                -Chứng chỉ thuộc chương chình CCDN <br />
+                -GPA:9.9
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="chungchi duoi">
+          <div>
+            <img src="images/Cert_DBI.png" alt="" />
+            <div>
+              <b>CHỨNG CHỈ LẬP TRÌNH DATABASE-FUNIX</b>
+              <p>
+                -Chứng chỉ thuộc chương chình CCDN <br />
+                GPA:9.9
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- item1 -->
-    <div class="accordion m-4" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button
-            class="accordion-button"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseOne"
-            aria-expanded="true"
-            aria-controls="collapseOne"
-          >
-            Accordion Item #1
-          </button>
-        </h2>
-        <div
-          id="collapseOne"
-          class="accordion-collapse collapse show"
-          aria-labelledby="headingOne"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is
-            shown by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+    </section>
+
+    <section id="project">
+      <div class="container container3">
+        <h1 class="section-title">Dự án</h1>
+        <div>
+          <div>
+            <img src="images/project_1.png" alt="" />
+            <div><b>CV Cá Nhân </b></div>
+            <div>
+              <ul>
+                <li>2021</li>
+                <li><i class="icon-user-1"></i>FUNiX</li>
+                <li><i class="icon-lamp"></i>DEVELOPER</li>
+              </ul>
+            </div>
+            <div class="naiyou">
+              <p>Mô tả</p>
+              <p>
+                trang web cv cá nhân online.gồm các thông tin cá nhân cũng như
+                như kỹ năng nghề nghiệp
+              </p>
+            </div>
+            <div class="naiyou">
+              <p>Nhiệm vụ</p>
+              <p>-phát triển code-review code-tối ưu code-xử lí lỗi</p>
+            </div>
+            <div class="naiyou">
+              <p>Công nghệ</p>
+              <p>-HTML,CSS</p>
+            </div>
+          </div>
+          <div>
+            <img src="images/project_2.png" alt="" />
+            <div><b>Trang WEB quản lí thú cưng </b></div>
+            <div>
+              <ul>
+                <li>2021</li>
+                <li><i class="icon-user-1"></i>FUNiX</li>
+                <li><i class="icon-lamp"></i>DEVELOPER</li>
+              </ul>
+            </div>
+            <div class="naiyou">
+              <p>Mô tả</p>
+              <p>
+                ứng dụng giúp quản lí các thông tin của thú cưng như:cân nặng,
+                giống,tình trạng tiên chủng....bao gồm các chức năng thêm/sửa
+                /xóa.
+              </p>
+            </div>
+            <div class="naiyou">
+              <p>Nhiệm vụ</p>
+              <p>-phát triển code-review code-tối ưu code-xử lí lỗi</p>
+            </div>
+            <div class="naiyou">
+              <p>Công nghệ</p>
+              <p>-HTML,CSS,JAVASCRIPT</p>
+            </div>
+          </div>
+          <div>
+            <img src="images/project_3.png" alt="" />
+            <div><b>Trang WEB tin tức </b></div>
+            <div>
+              <ul>
+                <li>2021</li>
+                <li><i class="icon-user-1"></i>FUNiX</li>
+                <li><i class="icon-lamp"></i>DEVELOPER</li>
+              </ul>
+            </div>
+            <div class="naiyou">
+              <p>Mô tả</p>
+              <p>
+                trang web WEB xem tin tức từ nhiều nguồn tin khác nhau,người
+                dùng có thể tìm kiếm các tin tức dựa theo từ khóa.
+              </p>
+            </div>
+            <div class="naiyou">
+              <p>Nhiệm vụ</p>
+              <p>-phát triển code-review code-tối ưu code-xử lí lỗi</p>
+            </div>
+            <div class="naiyou">
+              <p>Công nghệ</p>
+              <p>-HTML,CSS</p>
+            </div>
           </div>
         </div>
       </div>
-      <!-- item2 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo"
-            aria-expanded="false"
-            aria-controls="collapseTwo"
-          >
-            Accordion Item #2
-          </button>
-        </h2>
-        <div
-          id="collapseTwo"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingTwo"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
-          </div>
-        </div>
+    </section>
+
+    <section id="footer" class="bg-grey">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/lamthanh.congchu/" target="_blank"
+              ><i class="icon-facebook-circled"></i>
+              <p>Facebook</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/lamthanh.congchu/" target="_blank"
+              ><i class="icon-linkedin-circled"></i>
+              <p>Linkedin</p></a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/lamthanh.congchu/" target="_blank"
+              ><i class="icon-github-circled"></i>
+              <p>Github</p></a
+            >
+          </li>
+        </ul>
       </div>
-      <!-- item3 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="false"
-            aria-controls="collapseThree"
-          >
-            Accordion Item #3
-          </button>
-        </h2>
-        <div
-          id="collapseThree"
-          class="accordion-collapse collapse"
-          aria-labelledby="headingThree"
-          data-bs-parent="#accordionExample"
-        >
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is
-            hidden by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row g-4 m-2">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row g-4 m-2">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">
-              With supporting text below as a natural lead-in to additional
-              content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </body>
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-  ></script>
 </html>
