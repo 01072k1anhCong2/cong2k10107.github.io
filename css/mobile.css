@@ -20,7 +20,7 @@
   section > .container {
     margin: 0 auto;
     /* display: block; */
-    padding: 30px 50px;
+    padding: 30px 10px;
     max-width: 980px;
   }
   .container1 {
